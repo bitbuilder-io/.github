@@ -4,6 +4,17 @@
 
 BitBuilder Cloud is a next-generation infrastructure platform built on systemd's proven virtualization and containerization capabilities. We provide secure, isolated multi-tenant environments that work seamlessly across any cloud provider.
 
+## 📁 Organization Repository Structure
+
+```
+github.com/bitbuilder-io/
+├── .github/              # Organization profile and shared configurations
+├── bbctl/                # CLI tool for infrastructure management (Rust)
+├── bitboot/              # Boot and initialization utilities
+├── brand/                # Brand assets and guidelines (HTML)
+└── codelab-templates/    # VibeSDK template catalog (TypeScript)
+```
+
 ## 🚀 Key Features
 
 ### Distributed Architecture
@@ -78,6 +89,137 @@ We believe in open collaboration and building in public. Join our community:
 ## 📫 Get Started
 
 BitBuilder Cloud is currently in development. Stay tuned for updates on availability and early access programs.
+
+---
+
+## 📦 Repository Details
+
+### [bbctl](https://github.com/bitbuilder-io/bbctl)
+
+BitBuilder Cloud CLI is an all-in-one tool for provisioning and managing multi-tenant infrastructure on bare metal servers running VyOS v1.5 or Proxmox. Similar to fly.io's flyctl, bbctl provides a seamless experience for deploying, scaling, and managing your applications across distributed infrastructure.
+
+**Features:**
+- Manage VMs: Create, configure, and manage virtual machines across your infrastructure
+- Storage Management: Provision and attach volumes to your applications
+- Network Configuration: Set up and manage virtual networks with secure connectivity
+- Multi-provider Support: Works with VyOS v1.5 and Proxmox
+- Bare Metal Efficiency: Optimized for bare metal server deployment
+- Future Public Cloud Integration: Scale out to public clouds with E2E encryption (coming soon)
+
+**Directory Layout:**
+```
+bbctl/
+├── .dprint.json
+├── .eslintrc.json
+├── .gitignore
+├── CLAUDE.md
+├── Cargo.lock
+├── Cargo.toml
+├── PLAN.md
+├── README.md
+├── bun.lock
+├── bunfig.toml
+├── docs/
+├── examples/
+├── package.json
+├── schema.ts
+├── scripts/
+├── src/
+├── tests/
+├── tsconfig.json
+└── vyos-lab/
+```
+
+---
+
+### [bitboot](https://github.com/bitbuilder-io/bitboot)
+
+Boot and initialization utilities for BitBuilder Cloud infrastructure.
+
+**Directory Layout:**
+```
+bitboot/
+├── .gitignore
+├── LICENSE
+└── README.md
+```
+
+---
+
+### [brand](https://github.com/bitbuilder-io/brand)
+
+The complete BitBuilder Cloud brand identity system. This package contains everything you need to represent the BitBuilder Cloud brand professionally and consistently across all media.
+
+**Live Preview**: [bitbuilder-io.github.io/bitbuilder](https://bitbuilder-io.github.io/bitbuilder/)
+
+**Package Contents:**
+- 12 unique logo variations for different use cases
+- SVG, PNG, and ICO formats
+- Square and circular versions
+- Business card, letterhead, and email signature templates
+- Complete brand guidelines
+- Social media specifications
+
+**Directory Layout:**
+```
+brand/
+├── .github/
+├── BRAND_GUIDELINES.md
+├── README.md
+├── SOCIAL_MEDIA_ASSETS.md
+├── exports/
+├── extract-logos.ts
+├── index.html
+├── logos/
+├── optimize-and-export.ts
+├── public/
+├── svg-to-png-converter.html
+└── templates/
+```
+
+---
+
+### [codelab-templates](https://github.com/bitbuilder-io/codelab-templates)
+
+Official repository for templates catalog powering VibeSDK — a modern, open source "vibe coding" starter kit where users can build apps with AI agents. The goal of VibeSDK is to let anyone run their own vibe-coding platform on a Cloudflare Workers paid account with a streamlined, one-click deployment.
+
+These templates are the scaffolding that VibeSDK's AI agents use to generate full applications for users. They are kept lightweight, production-minded, and type-safe.
+
+**Key Components:**
+- `reference/` - Base reference templates used as starting points
+- `definitions/` - YAML definitions and overlay files per template
+- `build/` - Output folder for generated templates
+- `tools/` - Utility scripts for generation and verification
+
+**Directory Layout:**
+```
+codelab-templates/
+├── .github/
+├── .gitignore
+├── CLAUDE.md
+├── DEPLOYMENT_SETUP.md
+├── README.md
+├── create_zip.py
+├── definitions/
+├── deploy_templates.sh
+├── generate_template_catalog.py
+├── reference/
+├── template_catalog.json
+└── tools/
+```
+
+---
+
+### [.github](https://github.com/bitbuilder-io/.github)
+
+Organization profile and shared GitHub configurations for BitBuilder Cloud.
+
+**Directory Layout:**
+```
+.github/
+├── README.md
+└── profile/
+```
 
 ---
 
